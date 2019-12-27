@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - '12.13'
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: altay.aydemir@gmail.com
+  api_key:
+    secure: bQ9RlAxpcwyXZNct1+kNMiDJw0ydQLfv+jCZxKqcfVcSX+y3KV2TE+nkwClKMp4B15s4w31yFygnaGMTGDdeXdeZHIXXLAwm6mYirPdPtDHzknUe5ariiOc0+o5nWwYJqLM0C19kBqG5e7SO8CV8j/eBlRZA98Bm3mNPyimIDLVY4C+AtFkADcRdB4ItQllijyWiz2O47H7PuCFAAAolf1dBZsuEXZDeq6tK4g3ksKbthz6y948j6BMgF/v+v/FFpFaFlqizfrybJM+NgfNGeVddti2rHGcpVoOWYfzGNAUtZPBHjR8Gzk0dt06aQw/GPKrfhFHq9nBk2M1HIF86FA+dXDGL9y4Qz5M/bfINvj/O7MsdPyJzn6tSbSWeSIRi/YxDf0nvg821wXXkgmi+ZDOoLnHPBqC4ouJ0QpsK47LdFXoV/GzQiQTtwAWp43aVzKqTdtBFdO4C2HB/syqm8Y8cnI+k+1X7tIpdBMr95ncZ0uB8yAXsyzf9Ml5kGg/eJnFzM6tKpj+4coESi2rqlRm+Ak+/IjbQzyNEZNDyNA03DdLmpiY2lI5c+TeRamf0j9sJ5rZIDUeEchTzbebfoy1UBpYHiXuBU6xt9usRjPKkXHx6hhWJ66rRro3ExNi8kd8+9rB2geIP75VxA1nSgLPJEbxAqsPVf5WIjEG1jSk=
+  on:
+    tags: true
+    repo: putdotio/eslint-config-putio
