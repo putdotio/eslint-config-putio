@@ -14,9 +14,7 @@ Create `.eslintrc.json` file with the following contents:
 
 ```json
 {
-  // ...
   "extends": ["@putdotio"]
-  // ...
 }
 ```
 
