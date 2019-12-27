@@ -9,6 +9,14 @@
   "keywords": [],
   "author": "Put.io <devs@put.io>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/putdotio/eslint-config-putio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/putdotio/eslint-config-putio/issues"
+  },
+  "homepage": "https://github.com/putdotio/eslint-config-putio#readme",
   "dependencies": {
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -37,5 +45,8 @@
     "trailingComma": "all",
     "semi": false,
     "bracketSpacing": true
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
