@@ -1,5 +1,9 @@
 # `@putdotio/eslint-config`
 
+[![Build Status](https://travis-ci.org/putdotio/eslint-config-putio.svg?branch=master)](https://travis-ci.org/putdotio/eslint-config-putio)
+![npm (scoped)](https://img.shields.io/npm/v/@putdotio/eslint-config)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@putdotio/eslint-config)
+
 [Shared ESLint config](https://eslint.org/docs/developer-guide/shareable-configs) for put.io
 
 ## Installation
