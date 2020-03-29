@@ -1,6 +1,6 @@
 {
   "name": "@putdotio/eslint-config",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Shared eslint config for put.io",
   "main": "index.js",
   "scripts": {
