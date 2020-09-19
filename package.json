@@ -4,6 +4,7 @@
   "description": "Shared eslint config for put.io",
   "main": "index.js",
   "scripts": {
+    "test": "lint",
     "lint": "eslint ."
   },
   "keywords": [],
