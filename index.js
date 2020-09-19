@@ -40,6 +40,7 @@ module.exports = {
     'no-use-before-define': 'off',
     'operator-assignment': 'warn',
 
+    '@typescript-eslint/missing-boundary-types': 'off',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': 'warn',
