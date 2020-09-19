@@ -41,6 +41,7 @@ module.exports = {
     'operator-assignment': 'warn',
 
     '@typescript-eslint/missing-boundary-types': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': 'warn',
