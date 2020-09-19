@@ -9,6 +9,11 @@
 ## Installation
 
 ```bash
+yarn global add install-peerdeps ## sorry :'D
+install-peerdeps @putdotio/eslint-config --yarn -D
+```
+
+```bash
 npx install-peerdeps --dev @putdotio/eslint-config
 ```
 

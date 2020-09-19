@@ -6,7 +6,7 @@ module.exports = {
     'prettier/react',
   ],
 
-  plugins: ['prettier', 'react-hooks'],
+  plugins: ['import', 'prettier', 'react-hooks'],
 
   env: {
     browser: true,
@@ -19,6 +19,10 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: {},
+    },
+
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
   },
 
@@ -33,7 +37,6 @@ module.exports = {
     'no-return-assign': 'warn',
     'no-shadow': 'off',
     'no-unused-vars': 'off',
-    'no-unused-vars': 'off',
     'no-use-before-define': 'off',
     'operator-assignment': 'warn',
 
@@ -41,10 +44,15 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-use-before-define': 'warn',
     '@typescript-eslint/no-var-requires': 'off',
-    '@typescript-eslint/interface-name-prefix': [
+    '@typescript-eslint/naming-convention': [
       'error',
       {
-        prefixWithI: 'always',
+        selector: 'interface',
+        format: ['PascalCase'],
+        custom: {
+          regex: '^I[A-Z]',
+          match: true,
+        },
       },
     ],
     '@typescript-eslint/member-delimiter-style': [
@@ -114,12 +122,13 @@ module.exports = {
     'react/prefer-stateless-function': [2, { ignorePureComponents: true }],
     'react/state-in-constructor': 'warn',
     'react/static-property-placement': 'warn',
-    'react-hooks/rules-of-hooks': 'warn',
-    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
+
   overrides: [
     {
-      files: ['**/*.tsx'],
+      files: ['**/*.ts', '**/*.tsx'],
       rules: {
         'react/prop-types': 'off',
       },
