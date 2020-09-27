@@ -71,7 +71,9 @@ module.exports = {
       },
     ],
 
+    'import/prefer-default-export': 'off',
     'import/no-cycle': 'warn',
+
     'import/extensions': [
       'error',
       'ignorePackages',
@@ -82,6 +84,7 @@ module.exports = {
         tsx: 'never',
       },
     ],
+
     'import/no-extraneous-dependencies': [
       'error',
       {
@@ -133,6 +136,7 @@ module.exports = {
       files: ['**/*.ts', '**/*.tsx'],
       rules: {
         'react/prop-types': 'off',
+        'no-undef': 'off',
       },
     },
   ],
