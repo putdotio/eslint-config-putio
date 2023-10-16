@@ -20,13 +20,15 @@
 
 ```bash
 yarn add eslint@">8.0" prettier@">2.0 <3.0" @putdotio/eslint-config @putdotio/prettier-config --dev
+```
 
+```bash
 npm install eslint@">8.0" prettier@">2.0 <3.0" @putdotio/eslint-config @putdotio/prettier-config --save-dev
 ```
 
 ## Usage
 
-Make sure you are using `@putdotio/prettier-config`:
+Make sure you are using [`@putdotio/prettier-config`](https://github.com/putdotio/prettier-config)
 
 ```json
 {
