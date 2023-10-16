@@ -22,9 +22,9 @@
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@rushstack/eslint-config": "^3.4.1",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-perfectionist": "^2.2.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "eslint-plugin-perfectionist": "^2.2.0"
   },
   "peerDependencies": {
     "@putdotio/prettier-config": "^1.0.0",
