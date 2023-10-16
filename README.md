@@ -8,9 +8,6 @@
   <p>Shared eslint config for put.io's JavaScript projects.</p>
 
   <p>
-    <a href="https://github.com/putdotio/eslint-config-putio/actions/workflows/push.yml"><img
-        src="https://img.shields.io/github/actions/workflow/status/putdotio/eslint-config-putio/push.yml?branch=master"
-        alt="Build Status"></a>
     <img src="https://img.shields.io/npm/v/@putdotio/eslint-config" alt="npm (scoped)">
     <img src="https://img.shields.io/github/license/putdotio/eslint-config-putio" alt="GitHub">
   </p>
