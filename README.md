@@ -1,39 +1,53 @@
-# `@putdotio/eslint-config`
+<div align="center">
+  <p>
+    <img src="https://static.put.io/images/putio-boncuk.png" width="72">
+  </p>
 
-[![Build Status](https://travis-ci.org/putdotio/eslint-config-putio.svg?branch=master)](https://travis-ci.org/putdotio/eslint-config-putio)
-![npm (scoped)](https://img.shields.io/npm/v/@putdotio/eslint-config)
-![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@putdotio/eslint-config)
+  <h1>eslint-config-putio</h1>
 
-[Shared ESLint config](https://eslint.org/docs/developer-guide/shareable-configs) for put.io
+  <p>Shared eslint config for put.io's JavaScript projects.</p>
+
+  <p>
+    <a href="https://github.com/putdotio/eslint-config-putio/actions/workflows/push.yml"><img
+        src="https://img.shields.io/github/actions/workflow/status/putdotio/eslint-config-putio/push.yml?branch=master"
+        alt="Build Status"></a>
+    <img src="https://img.shields.io/npm/v/@putdotio/eslint-config" alt="npm (scoped)">
+    <img src="https://img.shields.io/github/license/putdotio/eslint-config-putio" alt="GitHub">
+  </p>
+</div>
 
 ## Installation
 
 ```bash
-yarn global add install-peerdeps ## sorry :'D
-install-peerdeps @putdotio/eslint-config --yarn -D
+yarn add eslint@">8.0" prettier@">2.0 <3.0" @putdotio/eslint-config @putdotio/prettier-config --dev
 ```
 
 ```bash
-npx install-peerdeps --dev @putdotio/eslint-config
+npm install eslint@">8.0" prettier@">2.0 <3.0" @putdotio/eslint-config @putdotio/prettier-config --save-dev
 ```
 
 ## Usage
 
-Create `.eslintrc.json` file with the following contents:
+Make sure you are using [`@putdotio/prettier-config`](https://github.com/putdotio/prettier-config)
 
 ```json
 {
-  "extends": ["@putdotio"]
+  "prettier": "@putdotio/prettier-config"
 }
 ```
 
-Create ESLint scripts in your `package.json`:
+To inherit every rule and plugin, add the following to your `.eslintrc` file:
 
 ```json
 {
-  "scripts": {
-    "lint": "eslint src",
-    "lint:fix": "npm run lint -- --fix"
-  }
+  "extends": "@putdotio"
+}
+```
+
+To only inherit code formatting, add the following to your `.eslintrc` file:
+
+```json
+{
+  "extends": "@putdotio/formatting"
 }
 ```
