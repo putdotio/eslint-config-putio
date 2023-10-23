@@ -5,4 +5,5 @@ const formatting = require('./formatting')
 module.exports = {
   extends: ['react-app', 'react-app/jest', ...formatting.extends],
   overrides: formatting.overrides,
+  rules: formatting.rules,
 }
