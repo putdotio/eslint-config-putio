@@ -1,6 +1,6 @@
 {
   "name": "@putdotio/eslint-config",
-  "version": "7.0.0",
+  "version": "7.0.1",
   "description": "Shared eslint config for put.io",
   "homepage": "https://github.com/putdotio/eslint-config-putio#readme",
   "bugs": {
