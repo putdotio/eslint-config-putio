@@ -1,41 +1,37 @@
 {
   "name": "@putdotio/eslint-config",
-  "description": "Shared eslint config for put.io",
   "version": "6.3.0",
-  "license": "MIT",
-  "author": "put.io <ui@put.io>",
-  "publishConfig": {
-    "access": "public"
+  "description": "Shared eslint config for put.io",
+  "homepage": "https://github.com/putdotio/eslint-config-putio#readme",
+  "bugs": {
+    "url": "https://github.com/putdotio/eslint-config-putio/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/putdotio/eslint-config-putio.git"
   },
-  "bugs": {
-    "url": "https://github.com/putdotio/eslint-config-putio/issues"
-  },
-  "homepage": "https://github.com/putdotio/eslint-config-putio#readme",
+  "license": "MIT",
+  "author": "put.io <ui@put.io>",
   "files": [
     "index.js",
     "formatting.js"
   ],
+  "prettier": "@putdotio/prettier-config",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@rushstack/eslint-config": "^3.4.1",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-config-react-app": "^7.0.1",
-    "eslint-plugin-json-files": "^3.0.0",
-    "eslint-plugin-perfectionist": "^2.2.0",
-    "eslint-plugin-prettier": "4.2.1"
-  },
-  "peerDependencies": {
-    "@putdotio/prettier-config": "^1.0.0",
-    "eslint": ">=8",
-    "prettier": ">2.0 <3.0"
+    "eslint-plugin-perfectionist": "^2.5.0"
   },
   "devDependencies": {
-    "@putdotio/prettier-config": "1.0.0",
-    "eslint": "8.51.0",
-    "prettier": "2.8.8"
+    "@putdotio/prettier-config": "^2.0.0",
+    "eslint": "8.51.0"
   },
-  "prettier": "@putdotio/prettier-config"
+  "peerDependencies": {
+    "eslint": ">=8"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
