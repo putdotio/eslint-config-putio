@@ -16,6 +16,9 @@
     "index.js",
     "react.js"
   ],
+  "scripts": {
+    "test": "eslint ."
+  },
   "prettier": "@putdotio/prettier-config",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
