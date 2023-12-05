@@ -14,7 +14,7 @@
   "author": "put.io <ui@put.io>",
   "files": [
     "index.js",
-    "formatting.js"
+    "react.js"
   ],
   "prettier": "@putdotio/prettier-config",
   "dependencies": {
